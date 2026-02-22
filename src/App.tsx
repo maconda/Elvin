@@ -33,7 +33,20 @@ export default function App() {
                 {lang === "en" ? (
                   <div className="flex flex-col gap-2">
                     <div className="flex flex-wrap items-center gap-x-4">
-                      <span className="font-mono text-zinc-400">&lt;Developer/&gt;</span>
+                      <span className="font-mono">
+                        <span className="text-blue-500">&lt;</span>
+                        <span className="text-teal-500">D</span>
+                        <span className="text-pink-500">e</span>
+                        <span className="text-orange-500">v</span>
+                        <span className="text-purple-500">e</span>
+                        <span className="text-yellow-500">l</span>
+                        <span className="text-blue-500">o</span>
+                        <span className="text-teal-500">p</span>
+                        <span className="text-pink-500">e</span>
+                        <span className="text-orange-500">r</span>
+                        <span className="text-purple-500">/</span>
+                        <span className="text-yellow-500">&gt;</span>
+                      </span>
                       <span>, Designer ,</span>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4">
@@ -44,7 +57,14 @@ export default function App() {
                 ) : (
                   <div className="flex flex-col gap-2">
                     <div className="flex flex-wrap items-center gap-x-4">
-                      <span className="font-mono text-zinc-400">&lt;开发者/&gt;</span>
+                      <span className="font-mono">
+                        <span className="text-blue-500">&lt;</span>
+                        <span className="text-teal-500">开</span>
+                        <span className="text-pink-500">发</span>
+                        <span className="text-orange-500">者</span>
+                        <span className="text-purple-500">/</span>
+                        <span className="text-yellow-500">&gt;</span>
+                      </span>
                       <span>, 设计师 ,</span>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4">
@@ -58,17 +78,25 @@ export default function App() {
                 {t.hero.subtitle}
               </p>
               <div className="flex flex-wrap gap-8 items-center">
-                <div className="flex gap-6">
-                  <a href="https://x.com/BorealTing" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors"><Twitter size={24} /></a>
-                  <a href="https://www.youtube.com/@YTCong" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors"><Youtube size={24} /></a>
-                  <a href="https://space.bilibili.com/20221512?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors"><Tv size={24} /></a>
-                  <a href="https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8.348 14.646c0-3.737 3.319-6.767 7.414-6.767 4.095 0 7.414 3.03 7.414 6.767 0 3.737-3.319 6.767-7.414 6.767-.856 0-1.678-.133-2.422-.377l-2.522 1.315.656-2.285c-1.92-1.155-3.126-3.03-3.126-5.42zm11.33-1.447c.412 0 .746-.335.746-.747 0-.412-.334-.746-.746-.746-.412 0-.747.334-.747.746 0 .412.335.747.747.747zm-3.926 0c.412 0 .747-.335.747-.747 0-.412-.335-.746-.747-.746-.412 0-.746.334-.746.746 0 .412.334.747.746.747zm-8.338-9.065c-4.905 0-8.882 3.611-8.882 8.064 0 2.487 1.212 4.712 3.132 6.225l-.788 2.744 3.028-1.577c.892.293 1.878.452 2.906.452.234 0 .465-.008.694-.024-.138-.58-.212-1.185-.212-1.805 0-4.485 3.98-8.12 8.892-8.12.36 0 .713.02 1.058.057-1.24-3.513-5.02-6.016-9.828-6.016zm-3.41 6.534c.495 0 .896-.401.896-.896 0-.495-.401-.896-.896-.896s-.896.401-.896.896c0 .495.401.896.896.896zm4.71 0c.495 0 .896-.401.896-.896 0-.495-.401-.896-.896-.896s-.896.401-.896.896c0 .495.401.896.896.896z" />
-                    </svg>
+                <div className="flex gap-8 items-center">
+                  <a href="https://x.com/BorealTing" target="_blank" rel="noopener noreferrer">
+                    <img src="input_file_0.png" alt="Twitter" className="w-10 h-10" referrerPolicy="no-referrer" />
                   </a>
-                  <a href="https://t.me/mura109551" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors"><Send size={24} /></a>
-                  <a href="mailto:nour109551@gmail.com" className="text-zinc-400 hover:text-zinc-900 transition-colors"><Mail size={24} /></a>
+                  <a href="https://www.youtube.com/@YTCong" target="_blank" rel="noopener noreferrer">
+                    <img src="input_file_1.png" alt="YouTube" className="w-10 h-10" referrerPolicy="no-referrer" />
+                  </a>
+                  <a href="https://space.bilibili.com/20221512?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer">
+                    <img src="input_file_2.png" alt="Bilibili" className="w-10 h-10" referrerPolicy="no-referrer" />
+                  </a>
+                  <a href="https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a" target="_blank" rel="noopener noreferrer">
+                    <img src="input_file_3.png" alt="WeChat" className="w-10 h-10" referrerPolicy="no-referrer" />
+                  </a>
+                  <a href="https://t.me/mura109551" target="_blank" rel="noopener noreferrer">
+                    <img src="input_file_4.png" alt="Telegram" className="w-10 h-10" referrerPolicy="no-referrer" />
+                  </a>
+                  <a href="mailto:nour109551@gmail.com">
+                    <img src="input_file_5.png" alt="Email" className="w-10 h-10" referrerPolicy="no-referrer" />
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -211,14 +239,14 @@ export default function App() {
                 href="mailto:nour109551@gmail.com" 
                 className="bg-white text-zinc-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-zinc-100 transition-colors flex items-center gap-3"
               >
-                <Mail size={20} /> {t.contact.cta}
+                <img src="input_file_5.png" alt="Email" className="w-8 h-8" referrerPolicy="no-referrer" /> {t.contact.cta}
               </a>
               <div className="flex gap-8 mt-6 md:mt-0">
                 <a href="https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-                  WeChat <ExternalLink size={14} />
+                  WeChat <img src="input_file_3.png" alt="" className="w-8 h-8" referrerPolicy="no-referrer" />
                 </a>
                 <a href="https://t.me/mura109551" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-                  Telegram <ExternalLink size={14} />
+                  Telegram <img src="input_file_4.png" alt="" className="w-8 h-8" referrerPolicy="no-referrer" />
                 </a>
               </div>
             </div>

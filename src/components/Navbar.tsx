@@ -36,7 +36,7 @@ export function Navbar({ lang, setLang, t }: NavbarProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#" className="text-xl font-serif font-bold tracking-tight">
+        <a href="#" className="text-4xl font-serif font-bold tracking-tight">
           Elvin<span className="text-zinc-400 italic">.</span>
         </a>
         <div className="flex items-center gap-8">
@@ -45,7 +45,7 @@ export function Navbar({ lang, setLang, t }: NavbarProps) {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
+                className="text-xl font-serif font-bold tracking-tight text-zinc-900 hover:opacity-70 transition-all"
               >
                 {item.name}
               </a>
