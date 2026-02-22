@@ -7,7 +7,7 @@ import { ProjectCard } from "./components/ProjectCard";
 import { translations, Language } from "./translations";
 
 export default function App() {
-  const [lang, setLang] = useState<Language>("en");
+  const [lang, setLang] = useState<Language>("zh");
   const t = translations[lang];
 
   const projectImages = [
