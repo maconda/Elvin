@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
-    "deploy": "npx wrangler deploy"  // 新增的部署命令
+    "deploy": "npx wrangler deploy --assets=./dist"  // 已修复部署命令
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
