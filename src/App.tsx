@@ -78,25 +78,30 @@ export default function App() {
                 {t.hero.subtitle}
               </p>
               <div className="flex flex-wrap gap-8 items-center">
-                <div className="flex gap-8 items-center">
-                  <a href="https://x.com/BorealTing" target="_blank" rel="noopener noreferrer">
-                    <img src="input_file_0.png" alt="Twitter" className="w-10 h-10" referrerPolicy="no-referrer" />
-                  </a>
-                  <a href="https://www.youtube.com/@YTCong" target="_blank" rel="noopener noreferrer">
-                    <img src="input_file_1.png" alt="YouTube" className="w-10 h-10" referrerPolicy="no-referrer" />
-                  </a>
-                  <a href="https://space.bilibili.com/20221512?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer">
-                    <img src="input_file_2.png" alt="Bilibili" className="w-10 h-10" referrerPolicy="no-referrer" />
-                  </a>
-                  <a href="https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a" target="_blank" rel="noopener noreferrer">
-                    <img src="input_file_3.png" alt="WeChat" className="w-10 h-10" referrerPolicy="no-referrer" />
-                  </a>
-                  <a href="https://t.me/mura109551" target="_blank" rel="noopener noreferrer">
-                    <img src="input_file_4.png" alt="Telegram" className="w-10 h-10" referrerPolicy="no-referrer" />
-                  </a>
-                  <a href="mailto:nour109551@gmail.com">
-                    <img src="input_file_5.png" alt="Email" className="w-10 h-10" referrerPolicy="no-referrer" />
-                  </a>
+                <div className="flex flex-wrap gap-6 items-center">
+                  {[
+                    { href: "https://x.com/BorealTing", src: "/static/icon1.png", alt: "Twitter" },
+                    { href: "https://www.youtube.com/@YTCong", src: "/static/icon2.png", alt: "YouTube" },
+                    { href: "https://space.bilibili.com/20221512?spm_id_from=333.1007.0.0", src: "/static/icon3.png", alt: "Bilibili" },
+                    { href: "https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a", src: "/static/icon4.png", alt: "WeChat" },
+                    { href: "https://t.me/mura109551", src: "/static/icon5.png", alt: "Telegram" },
+                    { href: "mailto:nour109551@gmail.com", src: "/static/icon6.png", alt: "Email" },
+                  ].map((social) => (
+                    <a 
+                      key={social.alt}
+                      href={social.href} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group"
+                    >
+                      <img 
+                        src={social.src} 
+                        alt={social.alt} 
+                        className="w-6 h-6 object-contain grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                        referrerPolicy="no-referrer" 
+                      />
+                    </a>
+                  ))}
                 </div>
               </div>
             </motion.div>
@@ -237,16 +242,18 @@ export default function App() {
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
               <a 
                 href="mailto:nour109551@gmail.com" 
-                className="bg-white text-zinc-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-zinc-100 transition-colors flex items-center gap-3"
+                className="bg-white text-zinc-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-zinc-100 transition-colors flex items-center gap-3 group"
               >
-                <img src="input_file_5.png" alt="Email" className="w-8 h-8" referrerPolicy="no-referrer" /> {t.contact.cta}
+                <img src="/static/icon6.png" alt="Email" className="w-6 h-6 object-contain" referrerPolicy="no-referrer" /> {t.contact.cta}
               </a>
-              <div className="flex gap-8 mt-6 md:mt-0">
-                <a href="https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-                  WeChat <img src="input_file_3.png" alt="" className="w-8 h-8" referrerPolicy="no-referrer" />
+              <div className="flex flex-col md:flex-row gap-8 mt-6 md:mt-0">
+                <a href="https://work.weixin.qq.com/ca/cawcdeea6aa4f7439a" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 group">
+                  <span className="text-sm uppercase tracking-widest font-medium">WeChat</span>
+                  <img src="/static/icon4.png" alt="" className="w-5 h-5 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all" referrerPolicy="no-referrer" />
                 </a>
-                <a href="https://t.me/mura109551" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-                  Telegram <img src="input_file_4.png" alt="" className="w-8 h-8" referrerPolicy="no-referrer" />
+                <a href="https://t.me/mura109551" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 group">
+                  <span className="text-sm uppercase tracking-widest font-medium">Telegram</span>
+                  <img src="/static/icon5.png" alt="" className="w-5 h-5 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all" referrerPolicy="no-referrer" />
                 </a>
               </div>
             </div>
